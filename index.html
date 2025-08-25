@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Bases com Frações</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Bases com Frações</h1>
+        
+        
+        <label for="numero">Digite o número:</label>
+        <input type="text" id="numero" placeholder="Ex: 10.5 ou 101.01">
+        
+        <label for="baseOrigem">Base de Origem (1=Dec, 2=Bin, 3=Oct, 4=Hex):</label>
+        <select id="baseOrigem">
+            <option value="1">Decimal (1)</option>
+            <option value="2">Binário (2)</option>
+            <option value="3">Octal (3)</option>
+            <option value="4">Hexadecimal (4)</option>
+        </select>
+        
+        <label for="baseDestino">Converter para (1=Dec, 2=Bin, 3=Oct, 4=Hex):</label>
+        <select id="baseDestino">
+            <option value="1">Decimal (1)</option>
+            <option value="2">Binário (2)</option>
+            <option value="3">Octal (3)</option>
+            <option value="4">Hexadecimal (4)</option>
+        </select>
+        
+        <button id="converterBtn">Converter</button>
+        
+        <div id="resultado"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
